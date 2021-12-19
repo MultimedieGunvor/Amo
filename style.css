@@ -1,0 +1,356 @@
+/* CSS reset*/
+*,
+:after, 
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+/* Generel styling */
+body {
+    background-image: url(images/baggrund.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Century Gothic', sans-serif;
+}
+/* Header og navigation */
+#logo {
+    display: inline;
+    top: 0;
+    left: 0;
+    margin: 15px;
+}
+#ham_nav {
+    display: inline;
+}
+h1 {
+    font-variant: small-caps;
+}
+#hamburger {
+    display: none;
+}
+#ham_items {
+    display: none;
+}
+#ham_items a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: right;
+}
+#ham_nav label {
+    color: #6a994e;
+    font-size: 3.2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+#ham_nav input:checked ~ #ham_items {
+    display: block;
+}
+/* Navigationsbjælke til laptop og desktop */
+#bar_nav {
+    display: none;
+    background-color: #6a994e;
+}
+.dropdown li {
+    list-style: none;
+}
+.navigation_wrapper {
+    color: white;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.navigation_items {
+    display: flex;
+    justify-content: space-around;
+}
+.dropdown {
+    margin: 0;
+    padding: 0;
+    background-color: #6a994e;
+}
+.dropdown li {
+    position: relative;
+}
+.dropdown li a {
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 7px;
+}
+.dropdown li ul {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #6a994e;
+}
+.dropdown li ul li a {
+    font-size: 1.4em;
+    text-align: left;
+    color: white;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+.dropdown li ul li a:hover {
+    background-color: #386641;
+}
+ul li:hover>ul {
+    display: block;
+}
+main {
+    width: 100%;
+    position: absolute;
+    top: 260px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main a {
+    text-decoration: none;
+}
+h1{
+    font-family: 'Tw Cen MT', sans-serif;
+}
+.slogan {
+    padding: 15px;
+    font-size: 3em;
+}
+.button {
+    font-family: 'Agency FB', sans-serif;
+    background-color: #6a994e;
+    font-size: 2em;
+    width: 150px;
+    height: 60px;
+    border-radius: 8px;
+    padding-top: 10px;
+    color: white;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer img {
+    margin: 7px;
+}
+/* Fremtidens bagværk */
+main img {
+    width: 100%;
+}
+.article_box {
+    position: static;
+    background-color: white;
+    color: #386641;
+    text-align: left;
+}
+.article_box h2 {
+    margin: 10px 5px 5px;
+    padding: 10px;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+.green_future,
+.kids_corner,
+.quiz {
+    margin: 10px 5px;
+}
+.green_future section,
+.kids_corner section {
+    padding: 10px 5px;
+}
+.green_future section a {
+    color: #bc4749;
+}
+.green_future section form {
+    display: flex;
+    flex-direction: column;
+}
+.green_future section input,
+.other {
+    margin: 10px 5px;
+}
+#other,
+#fname,
+#lname,
+#email {
+    border: solid #386641 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.send {
+    background-color: #6a994e;
+    color: white;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 2.2em;
+    width: 150px;
+    height: 60px;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    margin: 10px 5px;
+}
+.thanks {
+    text-align: center;
+}
+.øko_footer,
+.quiz_footer {
+    position: static;
+}
+/* Børnehjørnet */
+.kids_corner a{
+    color: #386641;
+}
+.kids_footer {
+    position: static;
+    margin-top: 50px;
+}
+/* Quiz */
+.quiz {
+    display: flex;
+    flex-direction: column;
+}
+.quiz a {
+    align-self: center;
+}
+.quiz img {
+    width: 90%;
+    margin: 15px;
+    align-self: center;
+}
+.quiz h3 {
+    margin: 15px;
+}
+.qanswer {
+    font-family: 'Agency FB', sans-serif;
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 1.6em;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    margin: 15px;
+}
+.beige {
+    background-color: #f2e8cf;
+    color: #386641;
+}
+.lightgreen {
+    background-color: #a7c957;
+}
+.green {
+    background-color: #6a994e;
+}
+.darkgreen {
+    background-color: #386641;
+}
+/* Media queries for tablets */
+@media screen and (min-width:500px) {
+    main {
+        top: 400px;
+        min-height: 500px;
+    }
+    #ham_items a {
+        font-size: 1.4em;
+    }
+    .kids_corner {
+        height: 700px;
+    }
+    .message {
+        margin-top: 100px;
+    }
+    .quiz_footer,
+    .øko_footer {
+        margin-top: 50px;
+    }
+    .front_footer {
+        position: fixed;
+    }
+}
+/* Media queries for laptop og desktop */
+@media screen and (min-width:1000px) {
+    #ham_nav {
+        display: none;
+    }
+    #bar_nav {
+        display: block;
+    }
+    body {
+        background-image: url(images/baggrund_stor.jpg);
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        width: 100%;
+        top: 0;
+        background-color: #6a994e;
+    }
+    main {
+        max-width: 1400px;
+        align-self: center;
+        top: 400px;
+    }
+    .front_main {
+        top: 300px;
+        max-height: 1000px;
+    }
+    .button:hover,
+    #submit:hover {
+        background-color: #386641;
+    }
+    .article_box {
+        max-width: 100%;
+    }
+    .article_box img {
+        max-width: 1200px;
+    }
+    .quiz {
+        height: 800px;
+    }
+    .beige:hover {
+        background-color: #f3db9e;
+    }
+    .lightgreen:hover {
+        background-color: #6a994e;
+    }
+    .green:hover {
+        background-color: #386641;
+    }
+    .darkgreen:hover {
+        background-color: #1d4124;
+    }
+    .kids_footer,
+    .øko_footer {
+        margin-top: 100px;
+    }
+    .front_footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+@media screen and (min-width:1200px) {
+    .article_box img {
+        width: 60%;
+    }
+}

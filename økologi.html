@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<title>Miljø | Amo </title>
+</head>
+<body>
+    <!-- Header og navigation 
+    Jeg fandt koden til burgermenuen her: https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ og tilpassede den til mine behov-->
+    <header>
+        <a href="index.html">
+            <picture> 
+                <source media="(min-width: 1000px)" srcset="images/logo_2.png">
+                <img id="logo" src="images/logo_1.png" alt="Logo" width="100">
+            </picture>
+        </a>
+        <nav id="ham_nav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <div id="ham_items">
+                <a href="tom.html">Bag</a>
+                <a href="børnehjørnet.html">Børnehjørnet</a>
+                <a href="miljø.html">Miljø</a>
+                <a href="tom.html">Konkurrencer</a>
+                <a href="tom.html">Om os</a>
+            </div>
+        </nav>
+    </header>
+    <!--Navigationsbar til bærbar/stationær
+    Jeg har brugt kode fra https://www.w3jar.com/how-to-create-multi-level-dropdown-menu-with-pure-css/ og tilpasset den til mine behov -->
+    <nav id="bar_nav">
+        <div class="navigation_wrapper">
+            <div class="navigation_items">
+                <ul class="dropdown">
+                    <li><a href="tom.html">Bag</a>
+                        <ul>
+                            <li><a href="tom.html">Det salte køkken</a></li>
+                            <li><a href="tom.html">Det søde køkken</a></li>
+                            <li><a href="tom.html">Inspiration</a></li>
+                            <li><a href="tom.html">Nemt og hurtigt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="børnehjørnet.html">Børnehjørnet</a>
+                        <ul>
+                            <li><a href="børnehjørnet.html">Quiz</a></li>
+                            <li><a href="tom.html">Opskrifter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="miljø.html">Miljø</a>
+                        <ul>
+                            <li><a href="økologi.html">Lav fremtidens bagværk</a></li>
+                            <li><a href="tom.html">Rene råvarer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="tom.html">Konkurrencer</a></li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="tom.html">Om os</a>
+                        <ul>
+                            <li><a href="tom.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="article_box">
+        <h2>Lav fremtidens bagværk</h2>
+        <img src="images/mirabelleblomster.jpg" alt="Mirabelle i blomst">
+        <div class="green_future">
+            <section>
+                <h3>Amo bliver grønnere</h3>
+                <p>Hos Amo har vi altid haft kvalitet og omtanke i højsædet, lige siden 1928.<br>
+                Nu tager vi det næste skridt og gør Amo grønnere og mere klimavenligt.</p>
+            </section>
+            <section>
+                <h3>Svar og vind</h3>
+                <p>Amo lancerer en økologisk linje, og i den forbindelse har vi brug for din hjælp. <br>
+                Vi trækker lod om 3 eksemplarer af Den Store Bagebog 3 blandt besvarelserne.</p>
+            </section>
+            <section>
+                <h3>Hvilke produkter vil du gerne se i en økologisk version?</h3>
+                <form autocomplete="on">
+                    <div>
+                        <input type="checkbox" id="product1" name="product1" value="Surdejspizza">
+                        <label for="product1">Surdejspizza</label><br>
+                        <input type="checkbox" id="product2" name="product2" value="Solsikkerugbrød">
+                        <label for="product2">Solsikkerugbrød</label><br>
+                        <input type="checkbox" id="product3" name="product3" value="Fødselsdagsboller">
+                        <label for="product3">Fødselsdagsboller</label><br>
+                        <input type="checkbox" id="product4" name="product4" value="Chokoladekage">
+                        <label for="product4">Chokoladekage</label><br>
+                        <input type="checkbox" id="product5" name="product5" value="Drømmekage">
+                        <label for="product5">Drømmekage</label><br>
+                        <input type="checkbox" id="product6" name="product6" value="Koldhævede brunchboller">
+                        <label for="product6">Koldhævede brunchboller</label><br>
+                        <input type="checkbox" id="product7" name="product7" value="Stenalderbrød">
+                        <label for="product7">Stenalderbrød</label><br>
+                        <input type="checkbox" id="product8" name="product8" value="Tortilla">
+                        <label for="product8">Tortilla</label><br>
+                        <input type="checkbox" id="product9" name="product9" value="Vafler">
+                        <label for="product9">Vafler</label><br>
+                        <input type="checkbox" id="product10" name="product10" value="Brownies">
+                        <label for="product10">Brownies</label><br>
+                        <input type="checkbox" id="product11" name="product11" value="Hvedemel">
+                        <label for="product11">Hvedemel</label><br>
+                        <input type="checkbox" id="product12" name="product12" value="Groft rugmel">
+                        <label for="product12">Groft rugmel</label><br>
+                        <input type="checkbox" id="product13" name="product13" value="Skårne rugkerne">
+                        <label for="product13">Skårne rugkerner</label><br><br>
+                        <label for="other" class="other">Andet:</label><br>
+                        <input type="text" id="other" name="other"><br><br>
+                        <label for="fname">Fornavn:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Efternavn:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email"><br><br>
+                    </div>
+                    <a href="tak.html">
+                        <div class="green send">Send</div>
+                    </a>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="øko_footer">
+        <a href="https://www.facebook.com/amodanmark"><img src="images/facebook_icon.png" alt="Facebook" width="40"></a>
+        <a href="https://www.youtube.com/channel/UCEUGJSdy4DRrLeApDk18wtw"><img src="images/yt_logo_mono_dark.png" alt="Youtube" width="45"></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<title>Juniorquiz | Amo </title>
+</head>
+<body>
+    <!-- Header og navigation 
+    Jeg fandt koden til burgermenuen her: https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ og tilpassede den til mine behov-->
+    <header>
+        <a href="index.html">
+            <picture> 
+                <source media="(min-width: 1000px)" srcset="images/logo_2.png">
+                <img id="logo" src="images/logo_1.png" alt="Logo" width="100">
+            </picture>
+        </a>
+        <nav id="ham_nav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <div id="ham_items">
+                <a href="tom.html">Bag</a>
+                <a href="børnehjørnet.html">Børnehjørnet</a>
+                <a href="miljø.html">Miljø</a>
+                <a href="tom.html">Konkurrencer</a>
+                <a href="tom.html">Om os</a>
+            </div>
+        </nav>
+    </header>
+    <!--Navigationsbar til bærbar/stationær
+    Jeg har brugt kode fra https://www.w3jar.com/how-to-create-multi-level-dropdown-menu-with-pure-css/ og tilpasset den til mine behov -->
+    <nav id="bar_nav">
+        <div class="navigation_wrapper">
+            <div class="navigation_items">
+                <ul class="dropdown">
+                    <li><a href="tom.html">Bag</a>
+                        <ul>
+                            <li><a href="tom.html">Det salte køkken</a></li>
+                            <li><a href="tom.html">Det søde køkken</a></li>
+                            <li><a href="tom.html">Inspiration</a></li>
+                            <li><a href="tom.html">Nemt og hurtigt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="børnehjørnet.html">Børnehjørnet</a>
+                        <ul>
+                            <li><a href="børnehjørnet.html">Quiz</a></li>
+                            <li><a href="tom.html">Opskrifter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="miljø.html">Miljø</a>
+                        <ul>
+                            <li><a href="økologi.html">Lav fremtidens bagværk</a></li>
+                            <li><a href="tom.html">Rene råvarer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="tom.html">Konkurrencer</a></li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="tom.html">Om os</a>
+                        <ul>
+                            <li><a href="tom.html">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="article_box">
+        <article class="quiz">
+            <img src="images/redskaber.svg" alt="Køkkenredskaber">
+            <h3>Line har et stort piskeris.<br>Hvad kan hun med det?</h3>
+            <a href="wronganswer2.html">
+                <div class="qanswer beige">Lave rugbrød</div>
+            </a>
+            <a href="wronganswer2.html">
+                <div class="qanswer lightgreen">Lave risengrød</div>
+            </a>
+            <a href="wronganswer2.html">
+                <div class="qanswer green">Snitte grøntsager</div>
+            </a>
+            <a href="quiz3.html">
+                <div class="qanswer darkgreen">Lave flødeskum</div>
+            </a>
+        </article>
+    </main>
+    <footer class="quiz_footer">
+        <a href="https://www.facebook.com/amodanmark"><img src="images/facebook_icon.png" alt="Facebook" width="40"></a>
+        <a href="https://www.youtube.com/channel/UCEUGJSdy4DRrLeApDk18wtw"><img src="images/yt_logo_mono_dark.png" alt="Youtube" width="45"></a>
+    </footer>
+</body>
+</html>
